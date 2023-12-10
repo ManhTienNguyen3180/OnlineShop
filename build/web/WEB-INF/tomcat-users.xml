@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+<tomcat-users>
+  <!-- Một người dùng ví dụ với vai trò quản trị viên (admin) -->
+  <user username="admin" password="admin" roles="manager-gui,admin-gui"/>
+
+  
+</tomcat-users>
+
+
+
+
