@@ -1,8 +1,7 @@
 # Sử dụng một base image chứa Tomcat và Java
 FROM tomcat:10-jdk8-openjdk-slim
 
-RUN rm -r /usr/local/tomcat/webapps
-RUN mv /usr/local/tomcat/webapps.dist /usr/local/tomcat/webapps
+
 # Tạo thư mục để chứa ứng dụng
 RUN mkdir /usr/local/tomcat/webapps/app
 
