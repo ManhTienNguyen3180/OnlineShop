@@ -3,8 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/F:/PRJ301/MyShop/src/java/controller/ProductServlet.java</file>
             <file>file:/F:/PRJ301/MyShop/src/java/dal/DBContext.java</file>
-            <file>file:/F:/PRJ301/MyShop/src/java/controller/AdminServlet.java</file>
+            <file>file:/F:/PRJ301/MyShop/Dockerfile</file>
+            <file>file:/F:/PRJ301/MyShop/web/WEB-INF/web.xml</file>
         </group>
     </open-files>
 </project-private>

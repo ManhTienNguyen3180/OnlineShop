@@ -1,16 +1,5 @@
-# Sử dụng một base image chứa Tomcat và Java
-FROM tomcat:10-jdk8-openjdk-slim
+FROM tomcat:9.0.1-jre8-alpine
 
+ADD ./dist/MyShop.war /usr/local/tomcat/webapps/webapp
 
-# Tạo thư mục để chứa ứng dụng
-RUN mkdir /usr/local/tomcat/webapps/ROOT
-
-# Sao chép file WAR đã build vào thư mục webapps
-COPY dist/MyShop.war /usr/local/tomcat/webapps/ROOT
-
-# Expose cổng mặc định của Tomcat
-EXPOSE 8080
-
-# Command khi container khởi động
-
-
+CMD ["catalina.sh", "run"]
