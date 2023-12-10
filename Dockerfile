@@ -12,5 +12,5 @@ COPY dist/MyShop.war /usr/local/tomcat/webapps/ROOT
 EXPOSE 8080
 
 # Command khi container khởi động
-CMD ["catalina.sh", "run"]
+
 
