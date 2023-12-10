@@ -9,7 +9,7 @@ RUN mkdir /usr/local/tomcat/webapps/MyShop
 COPY ./dist/MyShop.war /usr/local/tomcat/webapps/MyShop/
 
 # Expose cổng mặc định của Tomcat
-EXPOSE 8080
+EXPOSE 9999
 
 # Command khi container khởi động
 CMD ["catalina.sh", "run"]
