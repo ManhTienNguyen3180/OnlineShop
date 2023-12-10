@@ -1,11 +1,11 @@
-# Sử dụng một base image chứa Tomcat và Java 8
-FROM tomcat:10-jre8
+# Sử dụng một base image chứa Tomcat và Java
+FROM tomcat:10-jdk8-openjdk-slim
 
 # Tạo thư mục để chứa ứng dụng
-RUN mkdir /usr/local/tomcat/webapps/myapp
+RUN mkdir /usr/local/tomcat/webapps/your-web-app-name
 
-# Sao chép file WAR đã build vào thư mục webapps
-COPY dist/MyShop.war /usr/local/tomcat/webapps/myapp
+# Sao chép tất cả các tệp từ thư mục dist của NetBeans vào thư mục webapps của Tomcat
+COPY ./dist/MyShop.war /usr/local/tomcat/webapps/your-web-app-name/
 
 # Expose cổng mặc định của Tomcat
 EXPOSE 8080
