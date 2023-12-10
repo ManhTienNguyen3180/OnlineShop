@@ -5,7 +5,7 @@ FROM tomcat:9.0.1-jre8-alpine
 COPY ./MyShop.war /usr/local/tomcat/webapps/MyShop.war
 
 # Sao chép tệp tomcat-users.xml vào thư mục conf của Tomcat để cung cấp thông tin đăng nhập cho Tomcat Manager
-COPY ./tomcat-users.xml /usr/local/tomcat/conf/tomcat-users.xml
+COPY ./WEB-INF/tomcat-users.xml /usr/local/tomcat/conf/tomcat-users.xml
 
 # Expose cổng 8080 để có thể truy cập ứng dụng từ bên ngoài container
 EXPOSE 8080
