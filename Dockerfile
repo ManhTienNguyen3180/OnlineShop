@@ -1,5 +1,5 @@
 # Sử dụng hình ảnh Tomcat 9.0.1 với Java 8 trên Alpine Linux
-FROM tomcat:10-jre8-alpine
+FROM tomcat:10.0-jdk8-openjdk-slim
 
 # Sao chép file WAR vào thư mục webapps của Tomcat
 COPY ./dist/MyShop.war /usr/local/tomcat/webapps/MyShop.war
