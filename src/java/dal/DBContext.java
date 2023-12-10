@@ -13,7 +13,7 @@ public class DBContext {
             // Edit the serverName, databaseName, user, and password to match your Azure SQL Database configuration
             String serverName = "bookstore123.database.windows.net";
             String databaseName = "Fasshop";
-            String user = "tiennm";
+            String user = "tiennm@bookstore123";
             String password = "Tienlove012";
 
             String url = String.format("jdbc:sqlserver://%s:1433;databaseName=%s;", serverName, databaseName);
