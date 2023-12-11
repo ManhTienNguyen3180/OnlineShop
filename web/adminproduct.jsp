@@ -215,7 +215,7 @@
         
         <script type="text/javascript">
             var xmlhttp = new XMLHttpRequest();
-            var url = "https://bookstore-dvgx.onrender.com/MyShop/adminproduct";
+            var url = "http://localhost:9999/MyShop/adminproduct";
             xmlhttp.open("POST", url, true);
             xmlhttp.send();
             xmlhttp.onreadystatechange = function () {
