@@ -62,7 +62,7 @@ public class AdminServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-      response.setHeader("Access-Control-Allow-Origin", "http://localhost:9999/MyShop/adminproduct");
+      response.setHeader("Access-Control-Allow-Origin", "https://bookstore-dvgx.onrender.com");
         response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
         response.setHeader("Access-Control-Allow-Headers", "Content-Type");
         productDAO d = new productDAO();
@@ -81,7 +81,7 @@ public class AdminServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-       response.setHeader("Access-Control-Allow-Origin", "http://localhost:9999/MyShop/adminproduct");
+       response.setHeader("Access-Control-Allow-Origin", "https://bookstore-dvgx.onrender.com");
         response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
         response.setHeader("Access-Control-Allow-Headers", "Content-Type");
         productDAO o = new productDAO();
